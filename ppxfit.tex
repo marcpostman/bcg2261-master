@@ -1,0 +1,46 @@
+We fitted the extracted, normalized STIS spectra and estimate the stellar velocity dispersion in the knots.  We used pPXF, the penalized pixel fitting code due to \citet{2004PASP..116..138C}.  
+For each knot spectrum we logarithmically rebinned in wavelength so that it matched that of the MILES library spectra \citep{2010MNRAS.404.1639V} we used for our fitting.  To match the spectra, we convolved the higher resolution spectra with a gaussian with variance equal to the difference in variance of our observations and the template spectra.  
+We tried various schemes of binning the spectrum but found they made little difference to our final results.  Thus the effective resolution is $250\,\mathrm{km\,s^{-1}}$.    We similarly tried a variety of multiplicative and additive polynomials to account for any residual continuum shape but there was no significant improvement to the fits.  Because of the low signal-to-noise ratio of our data, we fit only the first two moments (velocity, $V$, and velocity dispersion, $\sigma$) of the line-of-sight velocity distribution relative to the recessional velocity of A2261.
+
+A major concern for our fits to data of low signal-to-noise ratio is spurious effects of template mismatch.  In order to take this into consideration we took two precautions.  First, we used the full MILES library.  Second, we ran a series of bootstrap monte carlo simulations to estimate the systematic uncertainty of template mismatch.  For each monte carlo realization we resampled the template library with replacement to produce a sampled template library.  The sampled template library was used to fit each knot spectrum.  For each knot spectrum, we ran 1000 realizations and took the median and 68\% interval.  All but knot 3 had median results for the velocity dispersion to be very similar to the best-fit results.  Knot 3 had a best-fit velocity dispersion of $\sigma = 50\,\mathrm{km\,s^{-1}}$ and a dispersion of $\sigma = 80\,\mathrm{km\,s^{-1}}$ from the results of the monte carlo bootstrap.  Although the difference is small compared to the formal fit uncertainty and the 68\% interval of $150$ and $40\,\mathrm{km\,s^{-1}}$, respectively, we report an average of the two values.
+
+The results of our fitting for each knot is expressed as the best-fit values, the formal fit uncertainty, and our estimate of the systematic uncertainty.  For knot 1, the velocity is $V = -217 \pm 110 \pm 133\,\mathrm{km\,s^{-1}}$, and the velocity dispersion is $\sigma = 469 \pm 89 \pm 260\,\mathrm{km\,s^{-1}}$.  For knot 2, the velocity is $V = -306 \pm 58 \pm 9\,\mathrm{km\,s^{-1}}$, and the velocity dispersion is $\sigma = 108 \pm 110 \pm 32\,\mathrm{km\,s^{-1}}$.  For knot 3, the velocity is $V = -216 \pm 40 \pm 15\,\mathrm{km\,s^{-1}}$, and the velocity dispersion is $\sigma = 65 \pm 150 \pm 40\,\mathrm{km\,s^{-1}}$.  We plot the 1D spectra with their best fits in Figure \ref{spectrafits}.  Knots 2 and 3 show reasonable results that appear to track the Na line visible to the eye.  The fit to knot 1, however, does not appear to track the Na line with any fideltiy, though the Na line is not obviously measured.  This is reflected in the large systematic uncertainty estimates.  In all of the three spectra, we find no significant evidence for a velocity dispersion larger than that expected for a knot without a large black hole.
+
+
+
+
+@ARTICLE{2010MNRAS.404.1639V,
+   author = {{Vazdekis}, A. and {S{\'a}nchez-Bl{\'a}zquez}, P. and {Falc{\'o}n-Barroso}, J. and 
+	{Cenarro}, A.~J. and {Beasley}, M.~A. and {Cardiel}, N. and 
+	{Gorgas}, J. and {Peletier}, R.~F.},
+    title = "{Evolutionary stellar population synthesis with MILES - I. The base models and a new line index system}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1004.4439},
+ primaryClass = "astro-ph.CO",
+ keywords = {globular clusters: general, galaxies: abundances, galaxies: elliptical and lenticular, cD, galaxies: stellar content},
+     year = 2010,
+    month = jun,
+   volume = 404,
+    pages = {1639-1671},
+      doi = {10.1111/j.1365-2966.2010.16407.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2010MNRAS.404.1639V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{2004PASP..116..138C,
+   author = {{Cappellari}, M. and {Emsellem}, E.},
+    title = "{Parametric Recovery of Line-of-Sight Velocity Distributions from Absorption-Line Spectra of Galaxies via Penalized Likelihood}",
+  journal = {\pasp},
+   eprint = {astro-ph/0312201},
+ keywords = {Galaxies: Individual: NGC Number: NGC 3384, Galaxies: Kinematics and Dynamics, line: profiles, Methods: Numerical},
+     year = 2004,
+    month = feb,
+   volume = 116,
+    pages = {138-147},
+      doi = {10.1086/381875},
+   adsurl = {http://adsabs.harvard.edu/abs/2004PASP..116..138C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+

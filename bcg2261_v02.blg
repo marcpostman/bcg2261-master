@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2014/Fink)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bcg2261_v02.aux
+The style file: mn2e.bst
+Database file #1: bcg2261_v02Notes.bib
+Database file #2: abel.bib
+Warning--I didn't find a database entry for "ref"
+Warning--I didn't find a database entry for "Scheuer+Williams1968"
+Warning--I didn't find a database entry for "carilli+98"
+You've used 30 entries,
+            2601 wiz_defined-function locations,
+            723 strings with 10106 characters,
+and the built_in function-call counts, 17000 in all, are:
+= -- 1532
+> -- 1606
+< -- 10
++ -- 570
+- -- 570
+* -- 1765
+:= -- 3167
+add.period$ -- 0
+call.type$ -- 30
+change.case$ -- 311
+chr.to.int$ -- 30
+cite$ -- 30
+duplicate$ -- 339
+empty$ -- 494
+format.name$ -- 610
+if$ -- 3019
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 30
+newline$ -- 94
+num.names$ -- 120
+pop$ -- 247
+preamble$ -- 1
+purify$ -- 340
+quote$ -- 0
+skip$ -- 505
+stack$ -- 0
+substring$ -- 660
+swap$ -- 35
+text.length$ -- 1
+text.prefix$ -- 190
+top$ -- 0
+type$ -- 270
+warning$ -- 0
+while$ -- 120
+width$ -- 0
+write$ -- 303
+(There were 3 warnings)
